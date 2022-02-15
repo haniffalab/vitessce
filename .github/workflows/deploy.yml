@@ -24,10 +24,12 @@ jobs:
     - name: 'Use gcloud CLI'
       run: 'gcloud info'
 
-    - name: Use Node.js 
+    - name: Use Node.js
+      env:
+        NODE_OPTIONS: "--max-old-space-size=7168"    
       uses: actions/setup-node@v2
       with:
-        node-version: 13
+        node-version: 16
     - run: npm ci
     - run: npm run build-demo:prod --if-present
 
