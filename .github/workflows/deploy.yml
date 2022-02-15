@@ -27,20 +27,21 @@ jobs:
     - name: Use Node.js 
       uses: actions/setup-node@v2
       with:
-        node-version: 16    
+        node-version: 16
+        cache: 'npm'
     - run: npm ci
 
     - name: Build production demo
       env:
-        NODE_OPTIONS: "--max-old-space-size=5120"
+        NODE_OPTIONS: "--max-old-space-size=4096"
       run: npm run build-demo:prod --if-present
 
     - name: 'Deploy build files'
       run: gsutil -m rsync -d -c -r dist-demo gs://webatlas-vitessce/benchmarking
       
     - name: 'Set HTTP cache'
-      run: gsutil -m setmeta -h "Cache-Control:public, max-age=60" gs://webatlas-vitessce/benchmarking/*.html
+      run: gsutil -m setmeta -h "Cache-Control:public, max-age=3600" -h "Content-Type:text/html" gs://webatlas-vitessce/benchmarking/*.html
     - name: 'Set JS cache'
-      run: gsutil -m setmeta -h "Cache-Control:public, max-age=60" gs://webatlas-vitessce/benchmarking/static/js/*.js
+      run: gsutil -m setmeta -h "Cache-Control:public, max-age=31536000" -h "Content-Type:application/javascript" gs://webatlas-vitessce/benchmarking/static/js/*.js
     - name: 'Set CSS cache'
-      run: gsutil -m setmeta -h "Cache-Control:public, max-age=60" gs://webatlas-vitessce/benchmarking/static/css/*.css
+      run: gsutil -m setmeta -h "Cache-Control:public, max-age=31536000" -h "Content-Type:text/css" gs://webatlas-vitessce/benchmarking/static/css/*.css
