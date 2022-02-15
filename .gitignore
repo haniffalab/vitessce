@@ -4,6 +4,7 @@
 /node_modules
 /.docz
 /demo/dist
+/eslint/node_modules
 npm-debug.log*
 venv
 
