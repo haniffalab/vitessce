@@ -30,6 +30,7 @@ jobs:
         node-version: 16
         cache: 'npm'
     - run: npm ci
+    - run: export NODE_OPTIONS=--max_old_space_size=4096
     - run: npm run build-demo:prod --if-present
 
     - name: 'Deploy build files'
