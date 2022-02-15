@@ -3,9 +3,9 @@
   "version": "1.1.17",
   "description": "Vitessce app and React component library",
   "author": "C McCallum",
-  "homepage": "http://vitessce.io/",
+  "homepage": "https://storage.googleapis.com/webatlas-vitessce/benchmarking/",
   "license": "MIT",
-  "repository": "https://github.com/vitessce/vitessce/",
+  "repository": "https://github.com/haniffalab/vitessce/",
   "keywords": [
     "react-component"
   ],

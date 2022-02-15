@@ -27,11 +27,13 @@ jobs:
     - name: Use Node.js 
       uses: actions/setup-node@v2
       with:
-        node-version: 16
-      env:
-        NODE_OPTIONS: "--max-old-space-size=5120"           
+        node-version: 16    
     - run: npm ci
-    - run: npm run build-demo:prod --if-present
+
+    - name: Build production demo
+      env:
+        NODE_OPTIONS: "--max-old-space-size=5120"
+      run: npm run build-demo:prod --if-present
 
     - name: 'Deploy build files'
       run: gsutil -m rsync -d -c -r dist-demo gs://webatlas-vitessce/benchmarking
