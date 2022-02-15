@@ -10,7 +10,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
     steps:
     - uses: actions/checkout@v2    
     - id: 'auth'
@@ -26,11 +26,10 @@ jobs:
 
     - name: Use Node.js
       env:
-        NODE_OPTIONS: "--max-old-space-size=8192"    
+        NODE_OPTIONS: "--max-old-space-size=4096"    
       uses: actions/setup-node@v2
       with:
         node-version: 14
-        cache: 'npm'
     - run: npm ci
     - run: npm run build-demo:prod --if-present
 
