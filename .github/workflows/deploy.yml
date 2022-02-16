@@ -37,7 +37,7 @@ jobs:
       run: npm run build-demo:prod --if-present
 
     - name: 'Deploy build files'
-      run: gsutil -m rsync -d -c -r dist-demo gs://webatlas-vitessce/benchmarking
+      run: gsutil -m rsync -d -c -r dist-demo gs://webatlas-vitessce/benchmarks
       
     - name: 'Set HTTP cache'
       run: gsutil -m setmeta -h "Cache-Control:public, max-age=3600" -h "Content-Type:text/html" gs://webatlas-vitessce/benchmarking/*.html
