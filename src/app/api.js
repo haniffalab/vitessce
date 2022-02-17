@@ -2563,14 +2563,19 @@ export const configs = {
             },
           },
           {
-            url: 'https://storage.googleapis.com/webatlas-vitessce-data/visium_144600/visium.cells.json',
+            url: 'https://storage.googleapis.com/webatlas-vitessce-data/visium_144600/1.cells.json',
             type: 'cells',
             fileType: 'cells.json',
           },
           {
-            url: 'https://storage.googleapis.com/webatlas-vitessce-data/visium_144600/visium.cell-sets.json',
+            url: 'https://storage.googleapis.com/webatlas-vitessce-data/visium_144600/1.cell-sets.json',
             type: 'cell-sets',
             fileType: 'cell-sets.json',
+          },
+          {
+            url: 'https://storage.googleapis.com/webatlas-vitessce-data/visium_144600/1.clusters.json',
+            type: 'expression-matrix',
+            fileType: 'clusters.json',
           },
         ],
       },
