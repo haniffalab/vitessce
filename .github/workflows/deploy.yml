@@ -40,8 +40,8 @@ jobs:
       run: gsutil -m rsync -d -c -r dist-demo gs://webatlas-vitessce/benchmarks
       
     - name: 'Set HTTP cache'
-      run: gsutil -m setmeta -h "Cache-Control:public, max-age=3600" -h "Content-Type:text/html" gs://webatlas-vitessce/benchmarking/*.html
+      run: gsutil -m setmeta -h "Cache-Control:public, max-age=3600" -h "Content-Type:text/html" gs://webatlas-vitessce/benchmarks/*.html
     - name: 'Set JS cache'
-      run: gsutil -m setmeta -h "Cache-Control:public, max-age=31536000" -h "Content-Type:text/javascript" gs://webatlas-vitessce/benchmarking/static/js/*.js
+      run: gsutil -m setmeta -h "Cache-Control:public, max-age=31536000" -h "Content-Type:text/javascript" gs://webatlas-vitessce/benchmarks/static/js/*.js
     - name: 'Set CSS cache'
-      run: gsutil -m setmeta -h "Cache-Control:public, max-age=31536000" -h "Content-Type:text/css" gs://webatlas-vitessce/benchmarking/static/css/*.css
+      run: gsutil -m setmeta -h "Cache-Control:public, max-age=31536000" -h "Content-Type:text/css" gs://webatlas-vitessce/benchmarks/static/css/*.css
