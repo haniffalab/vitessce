@@ -2681,6 +2681,239 @@ export const configs = {
         x: 2, y: 0, w: 10, h: 8 },
     ],
   },
+  bm19: {
+    name: 'Visium Sample 4 (15276 cells) raster cell segmentation [bioformats2raw v0.2.6] - Zarr Single Cell Format - Additional Components',
+    version: '1.0.0',
+    description: 'ISS sample data',
+    public: true,
+    datasets: [
+      {
+        uid: 'sample',
+        name: 'sample',
+        description: 'Visium Sample 4 (15276 cells) raster cell segmentation [bioformats2raw v0.2.6] - Zarr Single Cell Format - Additional Components',
+        files: [
+          {
+            type: 'raster',
+            fileType: 'raster.json',
+            options: {
+              renderLayers: ['Whole Embryo Sample', 'Cell Segmentations'],
+              schemaVersion: '0.0.2',
+              images: [
+                {
+                  name: 'Cell Segmentations',
+                  url: 'https://storage.googleapis.com/webatlas-vitessce-data/visium_144600/144600_label_zarr/',
+                  type: 'zarr',
+                  metadata: {
+                    isBitmask: true,
+                    dimensions: [
+                      {
+                        field: 't',
+                        type: 'quantitative',
+                        values: null,
+                      },
+                      {
+                        field: 'channel',
+                        type: 'nominal',
+                        values: [
+                          'Cells',
+                        ],
+                      },
+                      {
+                        field: 'z',
+                        type: 'quantitative',
+                        values: null,
+                      },
+                      {
+                        field: 'y',
+                        type: 'quantitative',
+                        values: null,
+                      },
+                      {
+                        field: 'x',
+                        type: 'quantitative',
+                        values: null,
+                      },
+                    ],
+                    isPyramid: true,
+                    transform: {
+                      translate: {
+                        y: 0,
+                        x: 0,
+                      },
+                      scale: 1,
+                    },
+                  },
+                },
+                {
+                  name: 'Whole Embryo Sample',
+                  url: 'https://storage.googleapis.com/webatlas-vitessce-data/visium_144600/144600_zarr/',
+                  type: 'zarr',
+                  metadata: {
+                    dimensions: [
+                      {
+                        field: 't',
+                        type: 'quantitative',
+                        values: null,
+                      },
+                      {
+                        field: 'channel',
+                        type: 'nominal',
+                        values: [
+                          'c01 DAPI',
+                          'c01 Alexa 488',
+                          'c01 Atto 425',
+                          'c01 Alexa 568',
+                          'c01 Alexa 647',
+                          'c02 DAPI',
+                          'c02 Alexa 488',
+                          'c02 Atto 425',
+                          'c02 Alexa 568',
+                          'c02 Alexa 647',
+                          'c03 DAPI',
+                          'c03 Alexa 488',
+                          'c03 Atto 425',
+                          'c03 Alexa 568',
+                          'c03 Alexa 647',
+                          'c04 DAPI',
+                          'c04 Alexa 488',
+                          'c04 Atto 425',
+                          'c04 Alexa 568',
+                          'c04 Alexa 647',
+                          'c05 DAPI',
+                          'c05 Alexa 488',
+                          'c05 Atto 425',
+                          'c05 Alexa 568',
+                          'c05 Alexa 647',
+                          'c06 DAPI',
+                          'c06 Alexa 488',
+                          'c06 Atto 425',
+                          'c06 Alexa 568',
+                          'c06 Alexa 647',
+                          'c07 DAPI',
+                          'c07 Alexa 488',
+                          'c07 Atto 425',
+                          'c07 Alexa 568',
+                          'c07 Alexa 647',
+                        ],
+                      },
+                      {
+                        field: 'z',
+                        type: 'quantitative',
+                        values: null,
+                      },
+                      {
+                        field: 'y',
+                        type: 'quantitative',
+                        values: null,
+                      },
+                      {
+                        field: 'x',
+                        type: 'quantitative',
+                        values: null,
+                      },
+                    ],
+                    isPyramid: true,
+                    transform: {
+                      translate: {
+                        y: 0,
+                        x: 0,
+                      },
+                      scale: 1,
+                    },
+                  },
+                },
+              ],
+            },
+          },
+          {
+            url: 'https://storage.googleapis.com/webatlas-vitessce-data/sc_zarr/visium.zarr',
+            type: 'cells',
+            fileType: 'anndata-cells.zarr',
+            options: {
+              xy: 'obsm/spatial',
+              mappings: {
+                UMAP: {
+                  key: 'obsm/spatial',
+                  dims: [0, 1],
+                },
+              },
+              factors: [
+                'obs/sample',
+                'obs/total_counts',
+              ],
+            },
+          },
+          {
+            url: 'https://storage.googleapis.com/webatlas-vitessce-data/sc_zarr/visium.zarr',
+            type: 'cell-sets',
+            fileType: 'anndata-cell-sets.zarr',
+            options: [
+              {
+                groupName: 'sample',
+                setName: 'obs/sample',
+              },
+              {
+                groupName: 'total_counts',
+                setName: 'obs/total_counts',
+              },
+            ],
+          },
+          {
+            url: 'https://storage.googleapis.com/webatlas-vitessce-data/sc_zarr/visium.zarr',
+            type: 'expression-matrix',
+            fileType: 'anndata-expression-matrix.zarr',
+            options: {
+              matrix: 'X',
+            },
+          },
+        ],
+      },
+    ],
+    initStrategy: 'auto',
+    coordinationSpace: {
+      embeddingZoom: {
+        UMAP: 0.75,
+      },
+      embeddingType: {
+        UMAP: 'UMAP',
+      },
+      spatialZoom: {
+        A: -4.5,
+      },
+      spatialTargetX: {
+        A: 12000,
+      },
+      spatialTargetY: {
+        A: 10000,
+      },
+    },
+    layout: [
+      { component: 'description',
+        x: 0, y: 0, w: 2, h: 1 },
+      { component: 'layerController',
+        x: 0, y: 1, w: 2, h: 4,
+      },
+      { component: 'status',
+        x: 0, y: 5, w: 2, h: 1 },
+      { component: 'spatial',
+        coordinationScopes: {
+          spatialZoom: 'A',
+          spatialTargetX: 'A',
+          spatialTargetY: 'A',
+        },
+        x: 2, y: 0, w: 7, h: 6 },
+      { component: 'genes',
+        x: 9, y: 0, w: 3, h: 2 },
+      { component: 'cellSets',
+        x: 9, y: 3, w: 3, h: 2 },
+      { component: 'scatterplot',
+        coordinationScopes: {
+          embeddingType: 'UMAP',
+          embeddingZoom: 'UMAP',
+        },
+        x: 9, y: 2, w: 3, h: 2 },
+    ],
+  },
 };
 /* eslint-enable */
 
