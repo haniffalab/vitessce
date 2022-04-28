@@ -2682,7 +2682,7 @@ export const configs = {
     ],
   },
   bm19: {
-    name: 'Visium Sample 4 (15276 cells) raster cell segmentation [bioformats2raw v0.2.6] - Zarr Single Cell Format - Additional Components',
+    name: 'Visium Sample 4 (14968 cells) raster cell segmentation [bioformats2raw v0.2.6] - Zarr Single Cell Format - Additional Components',
     version: '1.0.0',
     description: 'ISS sample data',
     public: true,
@@ -2690,7 +2690,7 @@ export const configs = {
       {
         uid: 'sample',
         name: 'sample',
-        description: 'Visium Sample 4 (15276 cells) raster cell segmentation [bioformats2raw v0.2.6] - Zarr Single Cell Format - Additional Components',
+        description: 'Visium Sample 4 (14968 cells) raster cell segmentation [bioformats2raw v0.2.6] - Zarr Single Cell Format - Additional Components',
         files: [
           {
             type: 'raster',
@@ -2826,13 +2826,13 @@ export const configs = {
             },
           },
           {
-            url: 'https://storage.googleapis.com/webatlas-vitessce-data/sc_zarr/visium.zarr',
+            url: 'https://storage.googleapis.com/webatlas-vitessce-data/zarr/visium/visium_minimal_100genes_chunks.zarr',
             type: 'cells',
             fileType: 'anndata-cells.zarr',
             options: {
               xy: 'obsm/spatial',
               mappings: {
-                UMAP: {
+                Spatial: {
                   key: 'obsm/spatial',
                   dims: [0, 1],
                 },
@@ -2844,7 +2844,7 @@ export const configs = {
             },
           },
           {
-            url: 'https://storage.googleapis.com/webatlas-vitessce-data/sc_zarr/visium.zarr',
+            url: 'https://storage.googleapis.com/webatlas-vitessce-data/zarr/visium/visium_minimal_100genes_chunks.zarr',
             type: 'cell-sets',
             fileType: 'anndata-cell-sets.zarr',
             options: [
@@ -2859,7 +2859,7 @@ export const configs = {
             ],
           },
           {
-            url: 'https://storage.googleapis.com/webatlas-vitessce-data/sc_zarr/visium.zarr',
+            url: 'https://storage.googleapis.com/webatlas-vitessce-data/zarr/visium/visium_minimal_100genes_chunks.zarr',
             type: 'expression-matrix',
             fileType: 'anndata-expression-matrix.zarr',
             options: {
@@ -2872,10 +2872,10 @@ export const configs = {
     initStrategy: 'auto',
     coordinationSpace: {
       embeddingZoom: {
-        UMAP: 0.75,
+        Spatial: 0.75,
       },
       embeddingType: {
-        UMAP: 'UMAP',
+        Spatial: 'Spatial',
       },
       spatialZoom: {
         A: -4.5,
@@ -2908,12 +2908,303 @@ export const configs = {
         x: 9, y: 3, w: 3, h: 2 },
       { component: 'scatterplot',
         coordinationScopes: {
-          embeddingType: 'UMAP',
-          embeddingZoom: 'UMAP',
+          embeddingType: 'Spatial',
+          embeddingZoom: 'Spatial',
         },
         x: 9, y: 2, w: 3, h: 2 },
     ],
   },
+  bm20: {
+    name: 'ISS Human Brain Sample',
+    version: '1.0.0',
+    description: '',
+    public: true,
+    datasets: [
+      {
+        uid: 'iss-human-brain-advanced',
+        name: 'iss-human-brain-advanced',
+        description: 'In-situ Sequencing Human Brain Sample. Raster cell segmentation [bioformats2raw v0.2.6], with additional Vitessce components',
+        files: [
+          {
+            type: 'raster',
+            fileType: 'raster.json',
+            options: {
+              renderLayers: [
+                'Microscopy Image',
+                'Cells Segmentations'
+              ],
+              schemaVersion: '0.0.2',
+              images: [
+                {
+                  name: 'Cells Segmentations',
+                  url: 'https://a04fcc815aa920b9c7e028bb79f7c2db29d0682c.cog.sanger.ac.uk/39bfafda600ff69122887bce04f4efb88f767caa/various_label_formats/out_opt_flow_registered_label_expanded_0.2.6',
+                  type: 'zarr',
+                  metadata: {
+                    isBitmask: true,
+                    dimensions: [
+                      {
+                        field: 'channel',
+                        type: 'nominal',
+                        values: [
+                          'Cells'
+                        ]
+                      },
+                      {
+                        field: 'y',
+                        type: 'quantitative',
+                        values: null
+                      },
+                      {
+                        field: 'x',
+                        type: 'quantitative',
+                        values: null
+                      }
+                    ],
+                    isPyramid: true,
+                    transform: {
+                      translate: {
+                        y: 0,
+                        x: 0
+                      },
+                      scale: 1
+                    }
+                  }
+                },                
+                {
+                  name: 'Microscopy Image',
+                  url: 'https://a04fcc815aa920b9c7e028bb79f7c2db29d0682c.cog.sanger.ac.uk/da4b9237bacccdf19c0760cab7aec4a8359010b0',
+                  type: 'zarr',
+                  metadata: {
+                    dimensions: [
+                      {
+                        field: 't',
+                        type: 'quantitative',
+                        values: null
+                      },
+                      {
+                        field: 'channel',
+                        type: 'nominal',
+                        values: [
+                          'c01 DAPI',
+                          'c01 Alexa 488',
+                          'c01 Atto 425',
+                          'c01 Alexa 568',
+                          'c01 Alexa 647',
+                          'c02 DAPI',
+                          'c02 Alexa 488',
+                          'c02 Atto 425',
+                          'c02 Alexa 568',
+                          'c02 Alexa 647',
+                          'c03 DAPI',
+                          'c03 Alexa 488',
+                          'c03 Atto 425',
+                          'c03 Alexa 568',
+                          'c03 Alexa 647',
+                          'c04 DAPI',
+                          'c04 Alexa 488',
+                          'c04 Atto 425',
+                          'c04 Alexa 568',
+                          'c04 Alexa 647',
+                          'c05 DAPI',
+                          'c05 Alexa 488',
+                          'c05 Atto 425',
+                          'c05 Alexa 568',
+                          'c05 Alexa 647',
+                          'c06 DAPI',
+                          'c06 Alexa 488',
+                          'c06 Atto 425',
+                          'c06 Alexa 568',
+                          'c06 Alexa 647',
+                          'c07 DAPI',
+                          'c07 Alexa 488',
+                          'c07 Atto 425',
+                          'c07 Alexa 568',
+                          'c07 Alexa 647'
+                        ]
+                      },
+                      {
+                        field: 'y',
+                        type: 'quantitative',
+                        values: null
+                      },
+                      {
+                        field: 'x',
+                        type: 'quantitative',
+                        values: null
+                      }
+                    ],
+                    isPyramid: true,
+                    transform: {
+                      translate: {
+                        y: 0,
+                        x: 0
+                      },
+                      scale: 1
+                    }
+                  }
+                }
+                ]
+              }
+            },
+            {
+              url: 'https://storage.googleapis.com/webatlas-vitessce-data/zarr/iss/iss_full_chunks.zarr',
+              type: 'cells',
+              fileType: 'anndata-cells.zarr',
+              options: {
+                xy: 'obsm/spatial',
+                mappings: {
+                  PCA: {
+                    key: 'obsm/X_pca',
+                    dims: [0, 1]
+                  },
+                  UMAP: {
+                    key: 'obsm/X_umap',
+                    dims: [0, 1]
+                  }
+                },
+                factors: [
+                  'obs/sample',
+                  'obs/total_counts'
+                ]
+              }
+            },
+            {
+              url: 'https://storage.googleapis.com/webatlas-vitessce-data/zarr/iss/iss_full_chunks.zarr',
+              type: 'cell-sets',
+              fileType: 'anndata-cell-sets.zarr',
+              options: [
+                {
+                  groupName: 'sample',
+                  setName: 'obs/sample'
+                },
+                {
+                  groupName: 'total_counts',
+                  setName: 'obs/total_counts'
+                }
+              ]
+            },
+            {
+              url: 'https://storage.googleapis.com/webatlas-vitessce-data/zarr/iss/iss_full_chunks.zarr',
+              type: 'expression-matrix',
+              fileType: 'anndata-expression-matrix.zarr',
+              options: {
+                matrix: 'X'
+              }
+            }
+          ]
+        }
+      ],
+      initStrategy: 'auto',
+      coordinationSpace: {
+        embeddingType: {
+          PCA: 'PCA',
+          UMAP: 'UMAP'
+        },
+        embeddingZoom: {
+          PCA: 0,
+          UMAP: 0.75
+        },
+        spatialZoom: {
+          A: -5.5
+        },
+        spatialTargetX: {
+          A: 16000
+        },
+        spatialTargetY: {
+          A: 20000
+        }
+      },
+      layout: [
+          {
+            component: 'description',
+            x: 0,
+            y: 0,
+            w: 2,
+            h: 2
+          },
+          {
+            component: 'layerController',
+            x: 0,
+            y: 2,
+            w: 2,
+            h: 8
+          },
+          {
+            component: 'status',
+            x: 0,
+            y: 9,
+            w: 2,
+            h: 2
+          },
+          {
+            component: 'spatial',
+            x: 2,
+            y: 0,
+            w: 4,
+            h: 8
+          },
+          {
+            component: 'scatterplot',
+            x: 6,
+            y: 0,
+            w: 3,
+            h: 4,
+            coordinationScopes:{
+              embeddingType: 'PCA',
+              embeddingZoom: 'PCA'
+            }
+          },
+          {
+            component: 'scatterplot',
+            x: 6,
+            y: 4,
+            w: 3,
+            h: 4,
+            coordinationScopes:{
+              embeddingType: 'UMAP',
+              embeddingZoom: 'UMAP'
+            }
+          },
+          {
+            component: 'genes',
+            x: 9,
+            y: 0,
+            w: 3,
+            h: 4
+          },
+          {
+            component: 'cellSets',
+            x: 9,
+            y: 4,
+            w: 3,
+            h: 4
+          },
+          {
+            component: 'heatmap',
+            x: 2,
+            y: 8,
+            w: 5,
+            h: 4,
+            props: {
+              transpose: true
+            }
+          },
+          {
+            component: 'cellSetExpression',
+            x: 7,
+            y: 8,
+            w: 3,
+            h: 4
+          },
+          {
+            component: 'expressionHistogram',
+            x: 10,
+            y: 8,
+            w: 2,
+            h: 4
+          }
+      ]
+  }
 };
 /* eslint-enable */
 
