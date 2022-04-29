@@ -135,20 +135,27 @@ export const configs = {
       },
     },
     layout: [
-      { component: 'description',
-        x: 0, y: 0, w: 2, h: 1 },
-      { component: 'layerController',
+      {
+        component: 'description',
+        x: 0, y: 0, w: 2, h: 1,
+      },
+      {
+        component: 'layerController',
         x: 0, y: 1, w: 2, h: 4,
       },
-      { component: 'status',
-        x: 0, y: 5, w: 2, h: 1 },
-      { component: 'spatial',
+      {
+        component: 'status',
+        x: 0, y: 5, w: 2, h: 1,
+      },
+      {
+        component: 'spatial',
         coordinationScopes: {
           spatialZoom: 'A',
           spatialTargetX: 'A',
           spatialTargetY: 'A',
         },
-        x: 2, y: 0, w: 10, h: 8 },
+        x: 2, y: 0, w: 10, h: 8,
+      },
     ],
   },
   bm02: {
@@ -278,20 +285,27 @@ export const configs = {
       },
     },
     layout: [
-      { component: 'description',
-        x: 0, y: 0, w: 2, h: 1 },
-      { component: 'layerController',
+      {
+        component: 'description',
+        x: 0, y: 0, w: 2, h: 1,
+      },
+      {
+        component: 'layerController',
         x: 0, y: 1, w: 2, h: 4,
       },
-      { component: 'status',
-        x: 0, y: 5, w: 2, h: 1 },
-      { component: 'spatial',
+      {
+        component: 'status',
+        x: 0, y: 5, w: 2, h: 1,
+      },
+      {
+        component: 'spatial',
         coordinationScopes: {
           spatialZoom: 'A',
           spatialTargetX: 'A',
           spatialTargetY: 'A',
         },
-        x: 2, y: 0, w: 10, h: 8 },
+        x: 2, y: 0, w: 10, h: 8,
+      },
     ],
   },
   bm03: {
@@ -411,20 +425,27 @@ export const configs = {
       },
     },
     layout: [
-      { component: 'description',
-        x: 0, y: 0, w: 2, h: 1 },
-      { component: 'layerController',
+      {
+        component: 'description',
+        x: 0, y: 0, w: 2, h: 1,
+      },
+      {
+        component: 'layerController',
         x: 0, y: 1, w: 2, h: 4,
       },
-      { component: 'status',
-        x: 0, y: 5, w: 2, h: 1 },
-      { component: 'spatial',
+      {
+        component: 'status',
+        x: 0, y: 5, w: 2, h: 1,
+      },
+      {
+        component: 'spatial',
         coordinationScopes: {
           spatialZoom: 'A',
           spatialTargetX: 'A',
           spatialTargetY: 'A',
         },
-        x: 2, y: 0, w: 10, h: 8 },
+        x: 2, y: 0, w: 10, h: 8,
+      },
     ],
   },
   bm04: {
@@ -557,20 +578,27 @@ export const configs = {
       },
     },
     layout: [
-      { component: 'description',
-        x: 0, y: 0, w: 2, h: 1 },
-      { component: 'layerController',
+      {
+        component: 'description',
+        x: 0, y: 0, w: 2, h: 1,
+      },
+      {
+        component: 'layerController',
         x: 0, y: 1, w: 2, h: 4,
       },
-      { component: 'status',
-        x: 0, y: 5, w: 2, h: 1 },
-      { component: 'spatial',
+      {
+        component: 'status',
+        x: 0, y: 5, w: 2, h: 1,
+      },
+      {
+        component: 'spatial',
         coordinationScopes: {
           spatialZoom: 'A',
           spatialTargetX: 'A',
           spatialTargetY: 'A',
         },
-        x: 2, y: 0, w: 10, h: 8 },
+        x: 2, y: 0, w: 10, h: 8,
+      },
     ],
   },
   bm05: {
@@ -731,20 +759,27 @@ export const configs = {
       },
     },
     layout: [
-      { component: 'description',
-        x: 0, y: 0, w: 2, h: 1 },
-      { component: 'layerController',
+      {
+        component: 'description',
+        x: 0, y: 0, w: 2, h: 1,
+      },
+      {
+        component: 'layerController',
         x: 0, y: 1, w: 2, h: 4,
       },
-      { component: 'status',
-        x: 0, y: 5, w: 2, h: 1 },
-      { component: 'spatial',
+      {
+        component: 'status',
+        x: 0, y: 5, w: 2, h: 1,
+      },
+      {
+        component: 'spatial',
         coordinationScopes: {
           spatialZoom: 'A',
           spatialTargetX: 'A',
           spatialTargetY: 'A',
         },
-        x: 2, y: 0, w: 10, h: 8 },
+        x: 2, y: 0, w: 10, h: 8,
+      },
     ],
   },
   bm06: {
@@ -904,20 +939,27 @@ export const configs = {
       },
     },
     layout: [
-      { component: 'description',
-        x: 0, y: 0, w: 2, h: 1 },
-      { component: 'layerController',
+      {
+        component: 'description',
+        x: 0, y: 0, w: 2, h: 1,
+      },
+      {
+        component: 'layerController',
         x: 0, y: 1, w: 2, h: 4,
       },
-      { component: 'status',
-        x: 0, y: 5, w: 2, h: 1 },
-      { component: 'spatial',
+      {
+        component: 'status',
+        x: 0, y: 5, w: 2, h: 1,
+      },
+      {
+        component: 'spatial',
         coordinationScopes: {
           spatialZoom: 'A',
           spatialTargetX: 'A',
           spatialTargetY: 'A',
         },
-        x: 2, y: 0, w: 10, h: 8 },
+        x: 2, y: 0, w: 10, h: 8,
+      },
     ],
   },
   bm07: {
@@ -1103,45 +1145,66 @@ export const configs = {
       },
     },
     layout: [
-      { component: 'description',
-        x: 0, y: 0, w: 2, h: 1 },
-      { component: 'layerController',
+      {
+        component: 'description',
+        x: 0, y: 0, w: 2, h: 1,
+      },
+      {
+        component: 'layerController',
         x: 0, y: 1, w: 2, h: 4,
       },
-      { component: 'status',
-        x: 0, y: 5, w: 2, h: 1 },
-      { component: 'spatial',
+      {
+        component: 'status',
+        x: 0, y: 5, w: 2, h: 1,
+      },
+      {
+        component: 'spatial',
         coordinationScopes: {
           spatialZoom: 'A',
           spatialTargetX: 'A',
           spatialTargetY: 'A',
         },
-        x: 2, y: 0, w: 4, h: 4 },
-      { component: 'genes',
-        x: 9, y: 0, w: 3, h: 2 },
-      { component: 'cellSets',
-        x: 9, y: 3, w: 3, h: 2 },
-      { component: 'heatmap',
+        x: 2, y: 0, w: 4, h: 4,
+      },
+      {
+        component: 'genes',
+        x: 9, y: 0, w: 3, h: 2,
+      },
+      {
+        component: 'cellSets',
+        x: 9, y: 3, w: 3, h: 2,
+      },
+      {
+        component: 'heatmap',
         props: {
           transpose: true,
         },
-        x: 2, y: 4, w: 5, h: 2 },
-      { component: 'cellSetExpression',
-        x: 7, y: 4, w: 3, h: 2 },
-      { component: 'expressionHistogram',
-        x: 10, y: 4, w: 2, h: 2 },
-      { component: 'scatterplot',
+        x: 2, y: 4, w: 5, h: 2,
+      },
+      {
+        component: 'cellSetExpression',
+        x: 7, y: 4, w: 3, h: 2,
+      },
+      {
+        component: 'expressionHistogram',
+        x: 10, y: 4, w: 2, h: 2,
+      },
+      {
+        component: 'scatterplot',
         coordinationScopes: {
           embeddingType: 'PCA',
           embeddingZoom: 'PCA',
         },
-        x: 6, y: 0, w: 3, h: 2 },
-      { component: 'scatterplot',
+        x: 6, y: 0, w: 3, h: 2,
+      },
+      {
+        component: 'scatterplot',
         coordinationScopes: {
           embeddingType: 'UMAP',
           embeddingZoom: 'UMAP',
         },
-        x: 6, y: 2, w: 3, h: 2 },
+        x: 6, y: 2, w: 3, h: 2,
+      },
     ],
   },
   bm08: {
@@ -1271,20 +1334,27 @@ export const configs = {
       },
     },
     layout: [
-      { component: 'description',
-        x: 0, y: 0, w: 2, h: 1 },
-      { component: 'layerController',
+      {
+        component: 'description',
+        x: 0, y: 0, w: 2, h: 1,
+      },
+      {
+        component: 'layerController',
         x: 0, y: 1, w: 2, h: 4,
       },
-      { component: 'status',
-        x: 0, y: 5, w: 2, h: 1 },
-      { component: 'spatial',
+      {
+        component: 'status',
+        x: 0, y: 5, w: 2, h: 1,
+      },
+      {
+        component: 'spatial',
         coordinationScopes: {
           spatialZoom: 'A',
           spatialTargetX: 'A',
           spatialTargetY: 'A',
         },
-        x: 2, y: 0, w: 10, h: 8 },
+        x: 2, y: 0, w: 10, h: 8,
+      },
     ],
   },
   bm09: {
@@ -1414,20 +1484,27 @@ export const configs = {
       },
     },
     layout: [
-      { component: 'description',
-        x: 0, y: 0, w: 2, h: 1 },
-      { component: 'layerController',
+      {
+        component: 'description',
+        x: 0, y: 0, w: 2, h: 1,
+      },
+      {
+        component: 'layerController',
         x: 0, y: 1, w: 2, h: 4,
       },
-      { component: 'status',
-        x: 0, y: 5, w: 2, h: 1 },
-      { component: 'spatial',
+      {
+        component: 'status',
+        x: 0, y: 5, w: 2, h: 1,
+      },
+      {
+        component: 'spatial',
         coordinationScopes: {
           spatialZoom: 'A',
           spatialTargetX: 'A',
           spatialTargetY: 'A',
         },
-        x: 2, y: 0, w: 10, h: 8 },
+        x: 2, y: 0, w: 10, h: 8,
+      },
     ],
   },
   bm10: {
@@ -1557,20 +1634,27 @@ export const configs = {
       },
     },
     layout: [
-      { component: 'description',
-        x: 0, y: 0, w: 2, h: 1 },
-      { component: 'layerController',
+      {
+        component: 'description',
+        x: 0, y: 0, w: 2, h: 1,
+      },
+      {
+        component: 'layerController',
         x: 0, y: 1, w: 2, h: 4,
       },
-      { component: 'status',
-        x: 0, y: 5, w: 2, h: 1 },
-      { component: 'spatial',
+      {
+        component: 'status',
+        x: 0, y: 5, w: 2, h: 1,
+      },
+      {
+        component: 'spatial',
         coordinationScopes: {
           spatialZoom: 'A',
           spatialTargetX: 'A',
           spatialTargetY: 'A',
         },
-        x: 2, y: 0, w: 10, h: 8 },
+        x: 2, y: 0, w: 10, h: 8,
+      },
     ],
   },
   bm11: {
@@ -1700,20 +1784,27 @@ export const configs = {
       },
     },
     layout: [
-      { component: 'description',
-        x: 0, y: 0, w: 2, h: 1 },
-      { component: 'layerController',
+      {
+        component: 'description',
+        x: 0, y: 0, w: 2, h: 1,
+      },
+      {
+        component: 'layerController',
         x: 0, y: 1, w: 2, h: 4,
       },
-      { component: 'status',
-        x: 0, y: 5, w: 2, h: 1 },
-      { component: 'spatial',
+      {
+        component: 'status',
+        x: 0, y: 5, w: 2, h: 1,
+      },
+      {
+        component: 'spatial',
         coordinationScopes: {
           spatialZoom: 'A',
           spatialTargetX: 'A',
           spatialTargetY: 'A',
         },
-        x: 2, y: 0, w: 10, h: 8 },
+        x: 2, y: 0, w: 10, h: 8,
+      },
     ],
   },
   bm12: {
@@ -1843,20 +1934,27 @@ export const configs = {
       },
     },
     layout: [
-      { component: 'description',
-        x: 0, y: 0, w: 2, h: 1 },
-      { component: 'layerController',
+      {
+        component: 'description',
+        x: 0, y: 0, w: 2, h: 1,
+      },
+      {
+        component: 'layerController',
         x: 0, y: 1, w: 2, h: 4,
       },
-      { component: 'status',
-        x: 0, y: 5, w: 2, h: 1 },
-      { component: 'spatial',
+      {
+        component: 'status',
+        x: 0, y: 5, w: 2, h: 1,
+      },
+      {
+        component: 'spatial',
         coordinationScopes: {
           spatialZoom: 'A',
           spatialTargetX: 'A',
           spatialTargetY: 'A',
         },
-        x: 2, y: 0, w: 10, h: 8 },
+        x: 2, y: 0, w: 10, h: 8,
+      },
     ],
   },
   bm13: {
@@ -1986,20 +2084,27 @@ export const configs = {
       },
     },
     layout: [
-      { component: 'description',
-        x: 0, y: 0, w: 2, h: 1 },
-      { component: 'layerController',
+      {
+        component: 'description',
+        x: 0, y: 0, w: 2, h: 1,
+      },
+      {
+        component: 'layerController',
         x: 0, y: 1, w: 2, h: 4,
       },
-      { component: 'status',
-        x: 0, y: 5, w: 2, h: 1 },
-      { component: 'spatial',
+      {
+        component: 'status',
+        x: 0, y: 5, w: 2, h: 1,
+      },
+      {
+        component: 'spatial',
         coordinationScopes: {
           spatialZoom: 'A',
           spatialTargetX: 'A',
           spatialTargetY: 'A',
         },
-        x: 2, y: 0, w: 10, h: 8 },
+        x: 2, y: 0, w: 10, h: 8,
+      },
     ],
   },
   bm14: {
@@ -2129,20 +2234,27 @@ export const configs = {
       },
     },
     layout: [
-      { component: 'description',
-        x: 0, y: 0, w: 2, h: 1 },
-      { component: 'layerController',
+      {
+        component: 'description',
+        x: 0, y: 0, w: 2, h: 1,
+      },
+      {
+        component: 'layerController',
         x: 0, y: 1, w: 2, h: 4,
       },
-      { component: 'status',
-        x: 0, y: 5, w: 2, h: 1 },
-      { component: 'spatial',
+      {
+        component: 'status',
+        x: 0, y: 5, w: 2, h: 1,
+      },
+      {
+        component: 'spatial',
         coordinationScopes: {
           spatialZoom: 'A',
           spatialTargetX: 'A',
           spatialTargetY: 'A',
         },
-        x: 2, y: 0, w: 10, h: 8 },
+        x: 2, y: 0, w: 10, h: 8,
+      },
     ],
   },
   bm15: {
@@ -2296,20 +2408,27 @@ export const configs = {
       },
     },
     layout: [
-      { component: 'description',
-        x: 0, y: 0, w: 2, h: 1 },
-      { component: 'layerController',
+      {
+        component: 'description',
+        x: 0, y: 0, w: 2, h: 1,
+      },
+      {
+        component: 'layerController',
         x: 0, y: 1, w: 2, h: 4,
       },
-      { component: 'status',
-        x: 0, y: 5, w: 2, h: 1 },
-      { component: 'spatial',
+      {
+        component: 'status',
+        x: 0, y: 5, w: 2, h: 1,
+      },
+      {
+        component: 'spatial',
         coordinationScopes: {
           spatialZoom: 'A',
           spatialTargetX: 'A',
           spatialTargetY: 'A',
         },
-        x: 2, y: 0, w: 10, h: 8 },
+        x: 2, y: 0, w: 10, h: 8,
+      },
     ],
   },
   bm16: {
@@ -2402,20 +2521,27 @@ export const configs = {
       },
     },
     layout: [
-      { component: 'description',
-        x: 0, y: 0, w: 2, h: 1 },
-      { component: 'layerController',
+      {
+        component: 'description',
+        x: 0, y: 0, w: 2, h: 1,
+      },
+      {
+        component: 'layerController',
         x: 0, y: 1, w: 2, h: 4,
       },
-      { component: 'status',
-        x: 0, y: 5, w: 2, h: 1 },
-      { component: 'spatial',
+      {
+        component: 'status',
+        x: 0, y: 5, w: 2, h: 1,
+      },
+      {
+        component: 'spatial',
         coordinationScopes: {
           spatialZoom: 'A',
           spatialTargetX: 'A',
           spatialTargetY: 'A',
         },
-        x: 2, y: 0, w: 10, h: 8 },
+        x: 2, y: 0, w: 10, h: 8,
+      },
     ],
   },
   bm17: {
@@ -2599,30 +2725,43 @@ export const configs = {
       },
     },
     layout: [
-      { component: 'description',
-        x: 0, y: 0, w: 2, h: 1 },
-      { component: 'layerController',
+      {
+        component: 'description',
+        x: 0, y: 0, w: 2, h: 1,
+      },
+      {
+        component: 'layerController',
         x: 0, y: 1, w: 2, h: 4,
       },
-      { component: 'status',
-        x: 0, y: 5, w: 2, h: 1 },
-      { component: 'spatial',
+      {
+        component: 'status',
+        x: 0, y: 5, w: 2, h: 1,
+      },
+      {
+        component: 'spatial',
         coordinationScopes: {
           spatialZoom: 'A',
           spatialTargetX: 'A',
           spatialTargetY: 'A',
         },
-        x: 2, y: 0, w: 7, h: 6 },
-      { component: 'genes',
-        x: 9, y: 0, w: 3, h: 2 },
-      { component: 'cellSets',
-        x: 9, y: 3, w: 3, h: 2 },
-      { component: 'scatterplot',
+        x: 2, y: 0, w: 7, h: 6,
+      },
+      {
+        component: 'genes',
+        x: 9, y: 0, w: 3, h: 2,
+      },
+      {
+        component: 'cellSets',
+        x: 9, y: 3, w: 3, h: 2,
+      },
+      {
+        component: 'scatterplot',
         coordinationScopes: {
           embeddingType: 'UMAP',
           embeddingZoom: 'UMAP',
         },
-        x: 9, y: 2, w: 3, h: 2 },
+        x: 9, y: 2, w: 3, h: 2,
+      },
     ],
   },
   bm18: {
@@ -2665,20 +2804,27 @@ export const configs = {
       },
     },
     layout: [
-      { component: 'description',
-        x: 0, y: 0, w: 2, h: 1 },
-      { component: 'layerController',
+      {
+        component: 'description',
+        x: 0, y: 0, w: 2, h: 1,
+      },
+      {
+        component: 'layerController',
         x: 0, y: 1, w: 2, h: 4,
       },
-      { component: 'status',
-        x: 0, y: 5, w: 2, h: 1 },
-      { component: 'spatial',
+      {
+        component: 'status',
+        x: 0, y: 5, w: 2, h: 1,
+      },
+      {
+        component: 'spatial',
         coordinationScopes: {
           spatialZoom: 'A',
           spatialTargetX: 'A',
           spatialTargetY: 'A',
         },
-        x: 2, y: 0, w: 10, h: 8 },
+        x: 2, y: 0, w: 10, h: 8,
+      },
     ],
   },
   bm19: {
@@ -2888,30 +3034,43 @@ export const configs = {
       },
     },
     layout: [
-      { component: 'description',
-        x: 0, y: 0, w: 2, h: 1 },
-      { component: 'layerController',
+      {
+        component: 'description',
+        x: 0, y: 0, w: 2, h: 1,
+      },
+      {
+        component: 'layerController',
         x: 0, y: 1, w: 2, h: 4,
       },
-      { component: 'status',
-        x: 0, y: 5, w: 2, h: 1 },
-      { component: 'spatial',
+      {
+        component: 'status',
+        x: 0, y: 5, w: 2, h: 1,
+      },
+      {
+        component: 'spatial',
         coordinationScopes: {
           spatialZoom: 'A',
           spatialTargetX: 'A',
           spatialTargetY: 'A',
         },
-        x: 2, y: 0, w: 7, h: 6 },
-      { component: 'genes',
-        x: 9, y: 0, w: 3, h: 2 },
-      { component: 'cellSets',
-        x: 9, y: 3, w: 3, h: 2 },
-      { component: 'scatterplot',
+        x: 2, y: 0, w: 7, h: 6,
+      },
+      {
+        component: 'genes',
+        x: 9, y: 0, w: 3, h: 2,
+      },
+      {
+        component: 'cellSets',
+        x: 9, y: 3, w: 3, h: 2,
+      },
+      {
+        component: 'scatterplot',
         coordinationScopes: {
           embeddingType: 'Spatial',
           embeddingZoom: 'Spatial',
         },
-        x: 9, y: 2, w: 3, h: 2 },
+        x: 9, y: 2, w: 3, h: 2,
+      },
     ],
   },
   bm20: {
@@ -2946,7 +3105,7 @@ export const configs = {
                         field: 'channel',
                         type: 'nominal',
                         values: [
-                          'Cells'
+                          'Cells',
                         ],
                       },
                       {
@@ -2969,7 +3128,7 @@ export const configs = {
                       scale: 1,
                     },
                   },
-                },                
+                },
                 {
                   name: 'Microscopy Image',
                   url: 'https://a04fcc815aa920b9c7e028bb79f7c2db29d0682c.cog.sanger.ac.uk/da4b9237bacccdf19c0760cab7aec4a8359010b0',
@@ -3043,167 +3202,167 @@ export const configs = {
                     },
                   },
                 },
-                ]
-              },
-            },
-            {
-              url: 'https://storage.googleapis.com/webatlas-vitessce-data/zarr/iss/iss_full_chunks.zarr',
-              type: 'cells',
-              fileType: 'anndata-cells.zarr',
-              options: {
-                xy: 'obsm/spatial',
-                mappings: {
-                  PCA: {
-                    key: 'obsm/X_pca',
-                    dims: [0, 1],
-                  },
-                  UMAP: {
-                    key: 'obsm/X_umap',
-                    dims: [0, 1],
-                  },
-                },
-                factors: [
-                  'obs/sample',
-                  'obs/total_counts',
-                ],
-              },
-            },
-            {
-              url: 'https://storage.googleapis.com/webatlas-vitessce-data/zarr/iss/iss_full_chunks.zarr',
-              type: 'cell-sets',
-              fileType: 'anndata-cell-sets.zarr',
-              options: [
-                {
-                  groupName: 'sample',
-                  setName: 'obs/sample',
-                },
-                {
-                  groupName: 'total_counts',
-                  setName: 'obs/total_counts',
-                },
               ],
             },
-            {
-              url: 'https://storage.googleapis.com/webatlas-vitessce-data/zarr/iss/iss_full_chunks.zarr',
-              type: 'expression-matrix',
-              fileType: 'anndata-expression-matrix.zarr',
-              options: {
-                matrix: 'X',
+          },
+          {
+            url: 'https://storage.googleapis.com/webatlas-vitessce-data/zarr/iss/iss_full_chunks.zarr',
+            type: 'cells',
+            fileType: 'anndata-cells.zarr',
+            options: {
+              xy: 'obsm/spatial',
+              mappings: {
+                PCA: {
+                  key: 'obsm/X_pca',
+                  dims: [0, 1],
+                },
+                UMAP: {
+                  key: 'obsm/X_umap',
+                  dims: [0, 1],
+                },
               },
+              factors: [
+                'obs/sample',
+                'obs/total_counts',
+              ],
             },
-          ],
-        },
-      ],
-      initStrategy: 'auto',
-      coordinationSpace: {
-        embeddingType: {
-          PCA: 'PCA',
-          UMAP: 'UMAP',
-        },
-        embeddingZoom: {
-          PCA: 0,
-          UMAP: 0.75,
-        },
-        spatialZoom: {
-          A: -5.5,
-        },
-        spatialTargetX: {
-          A: 16000,
-        },
-        spatialTargetY: {
-          A: 20000,
+          },
+          {
+            url: 'https://storage.googleapis.com/webatlas-vitessce-data/zarr/iss/iss_full_chunks.zarr',
+            type: 'cell-sets',
+            fileType: 'anndata-cell-sets.zarr',
+            options: [
+              {
+                groupName: 'sample',
+                setName: 'obs/sample',
+              },
+              {
+                groupName: 'total_counts',
+                setName: 'obs/total_counts',
+              },
+            ],
+          },
+          {
+            url: 'https://storage.googleapis.com/webatlas-vitessce-data/zarr/iss/iss_full_chunks.zarr',
+            type: 'expression-matrix',
+            fileType: 'anndata-expression-matrix.zarr',
+            options: {
+              matrix: 'X',
+            },
+          },
+        ],
+      },
+    ],
+    initStrategy: 'auto',
+    coordinationSpace: {
+      embeddingType: {
+        PCA: 'PCA',
+        UMAP: 'UMAP',
+      },
+      embeddingZoom: {
+        PCA: 0,
+        UMAP: 0.75,
+      },
+      spatialZoom: {
+        A: -5.5,
+      },
+      spatialTargetX: {
+        A: 16000,
+      },
+      spatialTargetY: {
+        A: 20000,
+      },
+    },
+    layout: [
+      {
+        component: 'description',
+        x: 0,
+        y: 0,
+        w: 2,
+        h: 2,
+      },
+      {
+        component: 'layerController',
+        x: 0,
+        y: 2,
+        w: 2,
+        h: 8,
+      },
+      {
+        component: 'status',
+        x: 0,
+        y: 9,
+        w: 2,
+        h: 2,
+      },
+      {
+        component: 'spatial',
+        x: 2,
+        y: 0,
+        w: 4,
+        h: 8,
+      },
+      {
+        component: 'scatterplot',
+        x: 6,
+        y: 0,
+        w: 3,
+        h: 4,
+        coordinationScopes: {
+          embeddingType: 'PCA',
+          embeddingZoom: 'PCA',
         },
       },
-      layout: [
-          {
-            component: 'description',
-            x: 0,
-            y: 0,
-            w: 2,
-            h: 2,
-          },
-          {
-            component: 'layerController',
-            x: 0,
-            y: 2,
-            w: 2,
-            h: 8,
-          },
-          {
-            component: 'status',
-            x: 0,
-            y: 9,
-            w: 2,
-            h: 2,
-          },
-          {
-            component: 'spatial',
-            x: 2,
-            y: 0,
-            w: 4,
-            h: 8,
-          },
-          {
-            component: 'scatterplot',
-            x: 6,
-            y: 0,
-            w: 3,
-            h: 4,
-            coordinationScopes:{
-              embeddingType: 'PCA',
-              embeddingZoom: 'PCA',
-            },
-          },
-          {
-            component: 'scatterplot',
-            x: 6,
-            y: 4,
-            w: 3,
-            h: 4,
-            coordinationScopes:{
-              embeddingType: 'UMAP',
-              embeddingZoom: 'UMAP',
-            },
-          },
-          {
-            component: 'genes',
-            x: 9,
-            y: 0,
-            w: 3,
-            h: 4,
-          },
-          {
-            component: 'cellSets',
-            x: 9,
-            y: 4,
-            w: 3,
-            h: 4,
-          },
-          {
-            component: 'heatmap',
-            x: 2,
-            y: 8,
-            w: 5,
-            h: 4,
-            props: {
-              transpose: true,
-            },
-          },
-          {
-            component: 'cellSetExpression',
-            x: 7,
-            y: 8,
-            w: 3,
-            h: 4,
-          },
-          {
-            component: 'expressionHistogram',
-            x: 10,
-            y: 8,
-            w: 2,
-            h: 4,
-          },
-      ],
+      {
+        component: 'scatterplot',
+        x: 6,
+        y: 4,
+        w: 3,
+        h: 4,
+        coordinationScopes: {
+          embeddingType: 'UMAP',
+          embeddingZoom: 'UMAP',
+        },
+      },
+      {
+        component: 'genes',
+        x: 9,
+        y: 0,
+        w: 3,
+        h: 4,
+      },
+      {
+        component: 'cellSets',
+        x: 9,
+        y: 4,
+        w: 3,
+        h: 4,
+      },
+      {
+        component: 'heatmap',
+        x: 2,
+        y: 8,
+        w: 5,
+        h: 4,
+        props: {
+          transpose: true,
+        },
+      },
+      {
+        component: 'cellSetExpression',
+        x: 7,
+        y: 8,
+        w: 3,
+        h: 4,
+      },
+      {
+        component: 'expressionHistogram',
+        x: 10,
+        y: 8,
+        w: 2,
+        h: 4,
+      },
+    ],
   },
 };
 /* eslint-enable */
