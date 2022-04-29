@@ -2931,7 +2931,7 @@ export const configs = {
             options: {
               renderLayers: [
                 'Microscopy Image',
-                'Cells Segmentations'
+                'Cells Segmentations',
               ],
               schemaVersion: '0.0.2',
               images: [
@@ -2947,28 +2947,28 @@ export const configs = {
                         type: 'nominal',
                         values: [
                           'Cells'
-                        ]
+                        ],
                       },
                       {
                         field: 'y',
                         type: 'quantitative',
-                        values: null
+                        values: null,
                       },
                       {
                         field: 'x',
                         type: 'quantitative',
-                        values: null
-                      }
+                        values: null,
+                      },
                     ],
                     isPyramid: true,
                     transform: {
                       translate: {
                         y: 0,
-                        x: 0
+                        x: 0,
                       },
-                      scale: 1
-                    }
-                  }
+                      scale: 1,
+                    },
+                  },
                 },                
                 {
                   name: 'Microscopy Image',
@@ -2979,7 +2979,7 @@ export const configs = {
                       {
                         field: 't',
                         type: 'quantitative',
-                        values: null
+                        values: null,
                       },
                       {
                         field: 'channel',
@@ -3019,32 +3019,32 @@ export const configs = {
                           'c07 Alexa 488',
                           'c07 Atto 425',
                           'c07 Alexa 568',
-                          'c07 Alexa 647'
-                        ]
+                          'c07 Alexa 647',
+                        ],
                       },
                       {
                         field: 'y',
                         type: 'quantitative',
-                        values: null
+                        values: null,
                       },
                       {
                         field: 'x',
                         type: 'quantitative',
-                        values: null
-                      }
+                        values: null,
+                      },
                     ],
                     isPyramid: true,
                     transform: {
                       translate: {
                         y: 0,
-                        x: 0
+                        x: 0,
                       },
-                      scale: 1
-                    }
-                  }
-                }
+                      scale: 1,
+                    },
+                  },
+                },
                 ]
-              }
+              },
             },
             {
               url: 'https://storage.googleapis.com/webatlas-vitessce-data/zarr/iss/iss_full_chunks.zarr',
@@ -3055,18 +3055,18 @@ export const configs = {
                 mappings: {
                   PCA: {
                     key: 'obsm/X_pca',
-                    dims: [0, 1]
+                    dims: [0, 1],
                   },
                   UMAP: {
                     key: 'obsm/X_umap',
-                    dims: [0, 1]
-                  }
+                    dims: [0, 1],
+                  },
                 },
                 factors: [
                   'obs/sample',
-                  'obs/total_counts'
-                ]
-              }
+                  'obs/total_counts',
+                ],
+              },
             },
             {
               url: 'https://storage.googleapis.com/webatlas-vitessce-data/zarr/iss/iss_full_chunks.zarr',
@@ -3075,44 +3075,44 @@ export const configs = {
               options: [
                 {
                   groupName: 'sample',
-                  setName: 'obs/sample'
+                  setName: 'obs/sample',
                 },
                 {
                   groupName: 'total_counts',
-                  setName: 'obs/total_counts'
-                }
-              ]
+                  setName: 'obs/total_counts',
+                },
+              ],
             },
             {
               url: 'https://storage.googleapis.com/webatlas-vitessce-data/zarr/iss/iss_full_chunks.zarr',
               type: 'expression-matrix',
               fileType: 'anndata-expression-matrix.zarr',
               options: {
-                matrix: 'X'
-              }
-            }
-          ]
-        }
+                matrix: 'X',
+              },
+            },
+          ],
+        },
       ],
       initStrategy: 'auto',
       coordinationSpace: {
         embeddingType: {
           PCA: 'PCA',
-          UMAP: 'UMAP'
+          UMAP: 'UMAP',
         },
         embeddingZoom: {
           PCA: 0,
-          UMAP: 0.75
+          UMAP: 0.75,
         },
         spatialZoom: {
-          A: -5.5
+          A: -5.5,
         },
         spatialTargetX: {
-          A: 16000
+          A: 16000,
         },
         spatialTargetY: {
-          A: 20000
-        }
+          A: 20000,
+        },
       },
       layout: [
           {
@@ -3120,28 +3120,28 @@ export const configs = {
             x: 0,
             y: 0,
             w: 2,
-            h: 2
+            h: 2,
           },
           {
             component: 'layerController',
             x: 0,
             y: 2,
             w: 2,
-            h: 8
+            h: 8,
           },
           {
             component: 'status',
             x: 0,
             y: 9,
             w: 2,
-            h: 2
+            h: 2,
           },
           {
             component: 'spatial',
             x: 2,
             y: 0,
             w: 4,
-            h: 8
+            h: 8,
           },
           {
             component: 'scatterplot',
@@ -3151,8 +3151,8 @@ export const configs = {
             h: 4,
             coordinationScopes:{
               embeddingType: 'PCA',
-              embeddingZoom: 'PCA'
-            }
+              embeddingZoom: 'PCA',
+            },
           },
           {
             component: 'scatterplot',
@@ -3162,22 +3162,22 @@ export const configs = {
             h: 4,
             coordinationScopes:{
               embeddingType: 'UMAP',
-              embeddingZoom: 'UMAP'
-            }
+              embeddingZoom: 'UMAP',
+            },
           },
           {
             component: 'genes',
             x: 9,
             y: 0,
             w: 3,
-            h: 4
+            h: 4,
           },
           {
             component: 'cellSets',
             x: 9,
             y: 4,
             w: 3,
-            h: 4
+            h: 4,
           },
           {
             component: 'heatmap',
@@ -3186,25 +3186,25 @@ export const configs = {
             w: 5,
             h: 4,
             props: {
-              transpose: true
-            }
+              transpose: true,
+            },
           },
           {
             component: 'cellSetExpression',
             x: 7,
             y: 8,
             w: 3,
-            h: 4
+            h: 4,
           },
           {
             component: 'expressionHistogram',
             x: 10,
             y: 8,
             w: 2,
-            h: 4
-          }
-      ]
-  }
+            h: 4,
+          },
+      ],
+  },
 };
 /* eslint-enable */
 
