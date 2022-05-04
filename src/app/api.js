@@ -2985,7 +2985,6 @@ export const configs = {
               },
               factors: [
                 'obs/sample',
-                'obs/total_counts',
               ],
             },
           },
@@ -2997,10 +2996,6 @@ export const configs = {
               {
                 groupName: 'sample',
                 setName: 'obs/sample',
-              },
-              {
-                groupName: 'total_counts',
-                setName: 'obs/total_counts',
               },
             ],
           },
