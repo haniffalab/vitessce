@@ -2972,7 +2972,7 @@ export const configs = {
             },
           },
           {
-            url: 'https://storage.googleapis.com/webatlas-vitessce-data/zarr/visium/visium_minimal_100genes_chunks.zarr',
+            url: 'https://storage.googleapis.com/webatlas-vitessce-data/zarr/visium/visium_chunks.zarr',
             type: 'cells',
             fileType: 'anndata-cells.zarr',
             options: {
@@ -2989,7 +2989,7 @@ export const configs = {
             },
           },
           {
-            url: 'https://storage.googleapis.com/webatlas-vitessce-data/zarr/visium/visium_minimal_100genes_chunks.zarr',
+            url: 'https://storage.googleapis.com/webatlas-vitessce-data/zarr/visium/visium_chunks.zarr',
             type: 'cell-sets',
             fileType: 'anndata-cell-sets.zarr',
             options: [
@@ -3000,7 +3000,7 @@ export const configs = {
             ],
           },
           {
-            url: 'https://storage.googleapis.com/webatlas-vitessce-data/zarr/visium/visium_minimal_100genes_chunks.zarr',
+            url: 'https://storage.googleapis.com/webatlas-vitessce-data/zarr/visium/visium_chunks.zarr',
             type: 'expression-matrix',
             fileType: 'anndata-expression-matrix.zarr',
             options: {
